@@ -1432,7 +1432,7 @@ body > footer .copyrights {
   padding-right: 60px;
 }
 
-/* Título da seção */
+/* Título da página */
 .pt-page[data-id="projetos"] .page-header h2 {
   font-size: 32px;
   font-weight: 700;
@@ -1480,7 +1480,7 @@ body > footer .copyrights {
   position: relative;
 }
 
-/* Nome sempre visível */
+/* Nome do projeto sempre visível */
 .projeto-grid .item .projeto-nome {
   position: absolute;
   top: 15px;
@@ -1502,7 +1502,7 @@ body > footer .copyrights {
   transition: transform 0.3s ease;
 }
 
-/* HOVER ZOOM */
+/* Efeito de zoom na logo */
 .projeto-grid .item:hover img {
   transform: scale(1.05);
 }
@@ -1524,7 +1524,7 @@ body > footer .copyrights {
   transition: 0.3s ease;
 }
 
-/* Overlay aparece só no hover */
+/* Overlay aparece só quando passa o mouse */
 .projeto-grid .item:hover .projeto-overlay {
   opacity: 1;
 }
@@ -1542,7 +1542,96 @@ body > footer .copyrights {
   font-size: 18px;
 }
 
-/* RESPONSIVO */
+/* =======================================
+Modal UNIFEI
+======================================= */
+
+.modal-unifei {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+/* Caixa branca do modal */
+.modal-unifei-content {
+  background-color: #fff;
+  width: 90%;
+  max-width: 450px;
+
+  margin: 180px auto;
+  padding: 30px;
+
+  border-radius: 12px;
+  text-align: center;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+
+  position: relative;
+}
+
+/* Botão X para fechar */
+.modal-fechar {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+
+  font-size: 28px;
+  font-weight: bold;
+
+  color: #333;
+  cursor: pointer;
+}
+
+/* Hover do botão fechar */
+.modal-fechar:hover {
+  color: #0b4ea2;
+}
+
+/* Título do modal */
+.modal-unifei-content h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Texto do modal */
+.modal-unifei-content p {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* E-mail acadêmico */
+.email-academico {
+  display: inline-block;
+  margin-top: 10px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #0b4ea2;
+  text-decoration: none;
+}
+
+/* Hover no e-mail */
+.email-academico:hover {
+  text-decoration: underline;
+}
+
+/* =======================================
+Responsivo
+======================================= */
+
 @media (max-width: 992px) {
   .projeto-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1559,6 +1648,11 @@ body > footer .copyrights {
   .projeto-grid {
     grid-template-columns: 1fr;
     max-width: 350px;
+  }
+
+  .modal-unifei-content {
+    margin: 140px auto;
+    padding: 25px 20px;
   }
 }
 
