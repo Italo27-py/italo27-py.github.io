@@ -330,7 +330,7 @@ button, input[type="button"], input[type="submit"] {
 .btn-primary:focus,
 button, input[type="button"], input[type="submit"] {
   background-color: #294e9e;
-  color: #fff;
+  color: #ffffff;
   border: 0;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.3);
 }
@@ -343,8 +343,8 @@ button:hover, input[type="button"]:hover, input[type="submit"]:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  background-color: #fff;
-  color: #212121;
+  background-color: #ffffff;
+  color: #070707;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.3);
 }
 
@@ -2653,4 +2653,167 @@ blockquote footer, blockquote small, blockquote .small {
   .home-page-description {
     font-size: 16px;
   }
+}
+/* =======================================
+AJUSTE GERAL DE CORES - DARK MODERNO
+======================================= */
+
+/* Fundo externo do site */
+body {
+  background-color: #111827;
+  background-image: none;
+}
+
+/* Caixa principal das páginas */
+.pt-page .section-inner {
+  background-color: #1f2937;
+}
+
+/* Conteúdo interno das páginas */
+.custom-page-content .page-content {
+  background-color: #1f2937;
+}
+
+/* Cabeçalhos das páginas */
+.custom-page-content .page-header.color-1 {
+  background-color: #294e9e;
+  background-image: none;
+}
+
+/* Títulos principais */
+.custom-page-content .page-header h2 {
+  color: #ffffff;
+}
+
+/* Títulos internos */
+h1, h2, h3, h4, h5, h6,
+.block-title h3 {
+  color: #f9fafb;
+}
+
+/* Textos gerais */
+p,
+.info-list li,
+.timeline-item,
+.contact-info-block,
+.modal-unifei-content p {
+  color: #d1d5db;
+}
+
+/* Destaques azuis */
+.block-title h3 span,
+.site-title span,
+.timeline-item .item-period,
+.fun-fact-block .fun-value,
+.contact-info-block i,
+.email-academico {
+  color: #60a5fa;
+}
+
+/* Cards gerais */
+.timeline-item,
+.blog-card,
+.fun-fact-block,
+.lm-pricing .lm-package,
+.service-image {
+  background-color: #273449;
+  color: #d1d5db;
+}
+
+/* Cards dos projetos */
+.projeto-grid .item {
+  background-color: #273449;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Nome dos projetos */
+.projeto-grid .item .projeto-nome {
+  color: #f9fafb;
+}
+
+/* Overlay dos projetos */
+.projeto-grid .item .projeto-overlay {
+  background: rgba(41, 78, 158, 0.92);
+  color: #ffffff;
+}
+
+/* Modal UNIFEI */
+.modal-unifei {
+  background-color: rgba(0, 0, 0, 0.70);
+}
+
+.modal-unifei-content {
+  background-color: #1f2937;
+  color: #d1d5db;
+}
+
+.modal-unifei-content h3 {
+  color: #ffffff;
+}
+
+.modal-fechar {
+  color: #ffffff;
+}
+
+.modal-fechar:hover {
+  color: #60a5fa;
+}
+
+/* Inputs e formulários */
+.form-control,
+.form-control:focus {
+  color: #f9fafb;
+  border-bottom-color: #4b5563;
+}
+
+.form-group label {
+  color: #d1d5db;
+}
+
+/* Barras de skill */
+.skill-container {
+  background-color: #374151;
+  border-color: #4b5563;
+}
+
+.skill-percentage {
+  background-color: #60a5fa;
+}
+/* =======================================
+HEADER / MENU - CORES NO DARK MODE
+======================================= */
+
+/* Fundo do header */
+.header,
+.header.sticked {
+  background-color: #111827;
+}
+
+/* Nome "Italo" */
+.site-title {
+  color: #ffffff;
+}
+
+/* Sobrenome azul "Dias Reis" */
+.site-title span {
+  color: #60a5fa;
+}
+
+/* Links do menu: Início, Currículo, Habilidades, Projetos */
+.site-main-menu li a,
+.site-main-menu li a:hover {
+  color: #ffffff;
+  opacity: 0.75;
+}
+
+/* Link ativo e hover */
+.site-main-menu li.active a,
+.site-main-menu li a:hover {
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* Risquinho embaixo do menu ativo */
+.site-main-menu li a:after {
+  background-color: #60a5fa;
 }
