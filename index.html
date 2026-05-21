@@ -481,7 +481,24 @@
 
       </div>
       <!-- /Projeto Grid -->
+      <!-- Modal UNIFEI -->
+      <div id="modal-unifei" class="modal-unifei">
+  <div class="modal-unifei-content">
 
+    <span class="modal-fechar" onclick="fecharModalUnifei()">&times;</span>
+
+    <h3>Contato Acadêmico</h3>
+
+    <p>
+      Para fins acadêmicos, entre em contato pelo meu e-mail institucional:
+    </p>
+
+    <a href="mailto:d2026004385@unifei.edu.br" class="email-academico">
+      d2026004385@unifei.edu.br
+    </a>
+
+  </div>
+</div>
     </div>
 
   </div>
@@ -509,5 +526,22 @@
     <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
     <script type="text/javascript" src="js/jquery.googlemap.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script>
+  function abrirModalUnifei() {
+    document.getElementById("modal-unifei").style.display = "block";
+  }
+
+  function fecharModalUnifei() {
+    document.getElementById("modal-unifei").style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    var modal = document.getElementById("modal-unifei");
+
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
   </body>
 </html>
