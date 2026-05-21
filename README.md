@@ -36,7 +36,7 @@ Este projeto tem como objetivo reunir minhas principais informações profission
 
 ## Acesse o site
 
-(https://italo27-py.github.io/#index.html#home)
+(https://italo27-py.github.io/#home)
 
 ## Autor
 
